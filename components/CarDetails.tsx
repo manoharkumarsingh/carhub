@@ -9,7 +9,7 @@ const imaginApiKey = process.env.NEXT_PUBLIC_IMAGIN_API_KEY;
 const CarDetailsImage = ({ car, angle }: { car: CarProps; angle: string }) => (
   <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
     <Image
-      src={`https://cdn.imagin.studio/getimage?customer=${imaginApiKey}&make=${
+      src={`https://cdn.imagin.studio/getimage?customer=hrjavascript-mastery&make=${
         car.make
       }&modelFamily=${
         car.model.split(" ")[0]
@@ -74,7 +74,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                   <div className="flex-1 flex flex-col gap-3">
                     <div className="car-details__main-image">
                       <Image
-                        src={`https://cdn.imagin.studio/getimage?customer=${imaginApiKey}&make=${
+                        src={`https://cdn.imagin.studio/getimage?customer=hrjavascript-mastery&make=${
                           car.make
                         }&modelFamily=${
                           car.model.split(" ")[0]

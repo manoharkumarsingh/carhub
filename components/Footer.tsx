@@ -41,16 +41,24 @@ const Footer = () => (
     </div>
 
     <div className="footer__copyrights">
-      <p>@2022 CarHub. All rights reserved</p>
-
+      <p>@2023 CarHub. All rights reserved</p>
       <div className="footer__copyrights-link">
         <Link href="/" className="text-gray-500">
           Privacy & Policy
         </Link>
+
         <Link href="/" className="text-gray-500">
           Terms & Condition
         </Link>
       </div>
+    </div>
+    <div className="flex justify-center text-primary-blue font-semibold py-5">
+      <Link
+        href="https://www.linkedin.com/in/manoharkumarsinghprofile/"
+        className="text-2xl"
+      >
+        Developed By : Manohar Kumar Singh
+      </Link>
     </div>
   </footer>
 );
